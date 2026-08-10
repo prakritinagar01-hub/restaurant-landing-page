@@ -1,5 +1,6 @@
 # 🍽️ Restaurant Landing Page
 
+
 A modern and responsive restaurant landing page built using **HTML5 and CSS3**.  
 The website provides an attractive interface for showcasing a restaurant's menu, gallery, and contact information.
 
