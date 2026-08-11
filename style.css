@@ -7,11 +7,11 @@ orderButtons.forEach(function (button) {
     button.addEventListener("click", function (event) {
 
         event.preventDefault();
+        event.stopPropagation();
 
-        const card = this.closest("article");
+        const card = button.closest("article");
 
         const dishName = card.querySelector("h3").textContent;
-
         const price = card.querySelector("span").textContent;
 
         alert(
@@ -44,13 +44,13 @@ if (bookTableBtn) {
 }
 
 
-// ===== HERO BOOK A TABLE BUTTON =====
+// ===== HERO BOOK A TABLE =====
 
-const heroBookBtn = document.querySelector("#home a:last-of-type");
+const heroButtons = document.querySelectorAll("#home a");
 
-if (heroBookBtn) {
+if (heroButtons.length > 1) {
 
-    heroBookBtn.addEventListener("click", function (event) {
+    heroButtons[1].addEventListener("click", function (event) {
 
         event.preventDefault();
 
@@ -73,18 +73,25 @@ if (contactForm) {
 
         event.preventDefault();
 
-        const name =
-            document.querySelector("#contact input[type='text']").value.trim();
+        const name = document
+            .querySelector("#contact input[type='text']")
+            .value
+            .trim();
 
-        const email =
-            document.querySelector("#contact input[type='email']").value.trim();
+        const email = document
+            .querySelector("#contact input[type='email']")
+            .value
+            .trim();
 
-        const phone =
-            document.querySelector("#contact input[type='tel']").value.trim();
+        const phone = document
+            .querySelector("#contact input[type='tel']")
+            .value
+            .trim();
 
-        const message =
-            document.querySelector("#contact textarea").value.trim();
-
+        const message = document
+            .querySelector("#contact textarea")
+            .value
+            .trim();
 
         if (
             name === "" ||
@@ -96,16 +103,13 @@ if (contactForm) {
             alert("⚠️ Please fill in all the fields.");
 
             return;
-
         }
-
 
         alert(
             "✅ Thank you, " + name +
             "!\n\nYour message has been received." +
             "\nWe will contact you soon."
         );
-
 
         contactForm.reset();
 
@@ -114,7 +118,7 @@ if (contactForm) {
 }
 
 
-// ===== NAVIGATION LINKS =====
+// ===== NAVIGATION =====
 
 const navLinks = document.querySelectorAll("nav ul li a");
 
@@ -122,15 +126,15 @@ navLinks.forEach(function (link) {
 
     link.addEventListener("click", function (event) {
 
-        const targetId = this.getAttribute("href");
+        const targetId = link.getAttribute("href");
 
         if (targetId && targetId.startsWith("#")) {
-
-            event.preventDefault();
 
             const target = document.querySelector(targetId);
 
             if (target) {
+
+                event.preventDefault();
 
                 target.scrollIntoView({
                     behavior: "smooth"
@@ -145,8 +149,6 @@ navLinks.forEach(function (link) {
 });
 
 
-// ===== WELCOME MESSAGE =====
+// ===== WEBSITE LOADED =====
 
-console.log(
-    "🍽️ Delicious Bites website loaded successfully!"
-);
+console.log("🍽️ Delicious Bites website loaded successfully!");
