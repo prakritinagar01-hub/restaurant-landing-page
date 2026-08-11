@@ -1,40 +1,41 @@
-# 🍽️ Restaurant Landing Page
+# 🍽️ Delicious Bites – Restaurant Landing Page
 
+A modern and responsive restaurant landing page built using **HTML and CSS**.
 
-A modern and responsive restaurant landing page built using **HTML5 and CSS3**.  
-The website provides an attractive interface for showcasing a restaurant's menu, gallery, and contact information.
+Delicious Bites is a fictional restaurant website designed to showcase a clean, attractive, and user-friendly restaurant experience.
 
-## 🌐 Live Demo
+## 🌐 Live Website
 
-Coming Soon 🚀
+🔗 **Live Demo:**  
+https://prakritinagar01-hub.github.io/restaurant/
 
 ## 📌 Features
 
-- 🏠 Hero Section
-- 🍕 Restaurant Menu
-- 📸 Food Gallery
-- 📞 Contact Section
-- 📱 Responsive Design
-- 🎨 Modern UI Design
-- ✨ Hover Effects
-- 🧭 Navigation Bar
-- 📋 Restaurant Information
-- 🔗 Social Media Links
+- 🏠 Attractive Hero Section
+- 📖 About Us Section
+- 🍕 Popular Dishes / Menu Section
+- 🖼️ Food Gallery
+- 📞 Contact & Table Booking Section
+- 🦶 Responsive Footer
+- 📱 Responsive design for different screen sizes
+- 🎨 Modern color scheme and clean UI
+- ✨ Smooth scrolling navigation
+- 🔗 Navigation links to different sections
 
 ## 🛠️ Technologies Used
 
 - HTML5
 - CSS3
+- CSS Flexbox
+- CSS Grid
+- Responsive Media Queries
+- Google Chrome / Live Server for testing
 
 ## 📂 Project Structure
 
 ```text
-restaurant-landing-page/
+restaurant/
 │
 ├── index.html
 ├── style.css
-├── script.js
-├── README.md
-│
-└── assets/
-    └── images/
+└── README.md
