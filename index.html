@@ -1,318 +1,139 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- ===== NAVBAR ===== -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<header>
+    <nav>
+        <h1>Delicious Bites</h1>
 
-    <title>Delicious Bites | Restaurant</title>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
 
-    <link rel="stylesheet" href="style.css">
-    
-</head>
+        <a href="#contact" id="bookTableBtn">Book a Table</a>
+    </nav>
+</header>
 
-<body>
 
-    <!-- ================= NAVBAR ================= -->
+<!-- ===== HERO ===== -->
 
-    <header>
-        <nav>
-            <h1>Delicious Bites</h1>
+<section id="home">
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <div>
+        <p>WELCOME TO DELICIOUS BITES</p>
 
-            <a href="#contact">Book a Table</a>
-        </nav>
-    </header>
-
-
-    <!-- ================= HERO SECTION ================= -->
-
-    <main>
-
-        <section id="home">
-
-            <div>
-                <p>Welcome to Delicious Bites</p>
-
-                <h2>Good Food.<br>Great Moments.</h2>
-
-                <p>
-                    Enjoy delicious food made with fresh ingredients
-                    and served with love.
-                </p>
-
-                <a href="#menu">View Menu</a>
-                <a href="#contact">Book a Table</a>
-            </div>
-
-        </section>
-
-
-        <!-- ================= ABOUT SECTION ================= -->
-
-        <section id="about">
-
-            <div>
-                <p>About Us</p>
-
-                <h2>We Serve Happiness</h2>
-
-                <p>
-                    Delicious Bites is a place where great food,
-                    fresh ingredients and a warm atmosphere come together.
-                </p>
-
-                <p>
-                    Our chefs prepare every dish with care to give
-                    you an unforgettable dining experience.
-                </p>
-            </div>
-
-        </section>
-
-
-        <!-- ================= MENU SECTION ================= -->
-
-        <section id="menu">
-
-            <div>
-                <p>Our Menu</p>
-
-                <h2>Popular Dishes</h2>
-            </div>
-
-
-            <div>
-
-                <!-- Menu Item 1 -->
-                <article>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCcor__PntEbi9SJ7njf4DczoAvzXBqPxp1O6-LgjvZgI9XdMF3YBBzgy66-KWTpoiJKGERN_kMP4KkJvq0sQFCAEWDmVXlcEHVzlL3aRm5Q&s=10" alt="Margherita Pizza">
-
-                    <h3>Margherita Pizza</h3>
-
-                    <p>
-                        Fresh tomatoes, mozzarella cheese and basil.
-                    </p>
-
-                    <span>₹299</span>
-
-                    <a href="#contact">Order Now</a>
-                </article>
-
-
-                <!-- Menu Item 2 -->
-                <article>
-                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIgAbgMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAAEBQMGAQIHAP/EADoQAAIBAwMCAwUFBwQDAQAAAAECAwAEEQUSIRMxBkFRFCJhcYEjMpGhwQcWM0JSsdEVkuHwcoKiYv/EABkBAAMBAQEAAAAAAAAAAAAAAAEDBAIABf/EACsRAAICAgEDAQcFAQAAAAAAAAECABEDEiEEMUETFCJRcdHh8GGBkaHBMv/aAAwDAQACEQMRAD8A5qFOO1YYHI4ogHnFblR6VKTUvCyDaTg1sqktyalIA8qyoUHNcDARByPeIo3TrCbUbgQW+3djJLnAFCPInVIpt4duhDqCgcdRSPqOf0rOQkKSIBAtY0+fTLx7WZlLKAdy9jkA8f2+lAhmHnVz8a2oka0vAOHQxk/Lkf3P4VXLRI0u4y4yAeRQxvsoMJHEgjhkIDMrgHtkVlEZJeQcV0OO600LapdxqVznGPKknjD2T/UAbFNkZHAxTvEV5iIycVlScZJrGAfnW4TgA0Lmqm2+stHKeTG34VlAFZcetXmKbT4LCGa6ijJfgY5oWITc5kAQa3CsfP8AOhwJWPfFYxOG78UvUxoYQzBArWJGlm2ICzn+UDJrRi0aBmbisxX7RnEQ2g9yO9A2vM2NX4hQ8M6lctvSONR/+pVH602svDN5aSRyzSW6lCG/i/8AFA2+qXAUASMDnuDg8UyW6OFuLkl4A6qSSeSecfkaiydRm7cS3H0WL4xtq0cGoaStqJ0WVJA6ls4GMjy+ZpLD4aJYMNRiDD0japywB93Ix2zzxRlpLuA8xUvtOXGvuygdDi8yay0K560Je/hmjRhuUqQceeKk8daUkLRXVnhoWGDjyNN9LtXuJkUA+9zmrQ2hq1uY5QHjYYZWp3Tdb1D3stiR9T0uBCNTRnDwCrc1lpBnmnni/wAOzaLeq0TM9pMSY2P8p81NV8o/dga9NXDCxIWXWGWkJupREO38x9BWl3bhZCiSttU475omJxa2hA/iP50N862RcxcQb3zwTWu+btzRToiqWA7V69XOyRW2pt70LENEcQYR3MzoiRSSMc4CKTTkeGtcjtjcnTJzDgEsmHIHrgEkUvtbq7RWNvL0hgr1P+9u1NdBvvElwsr2GsGOKIKzF8e9nOBgj4c+maTkbz4jU2FAC4viJj2knBzjGKcXFwtxp1naINvRkaSQf1HsuP8A6qB9e8Q6k8d02k6bMh91m6W7nOMHng/CnkOpeLLGWJYbXS7e35CyQphc+QyDU2RKIJIv5yzH1BqtTAY/aZchbWRyq+9tU9vj6VNZ3AHXTkMoBVWHfPH5VNcarr8l4X1HV71F9o6QNunTXABJxgk9hn8aFinhn1EwTa3eu6NtEs8rur5weAWOMfMfOktiQjiUr1DnuJefDUupLGrw6dM6D+bpNz+VWVbrU5G2mymGe32ZrnNhJLBOTpfiG4huVDSvliy7R5FWz5Y/A4qXxXqXiBtQtDBqs1xbySInsjopVGA3ZyAM9hz6fgF0K0DkROQOxvUR9+0IsNDKXKGOTqK0YcYJPw+ma5hI0jAAeZrpWpaRdeJNEjtmvZo7iFmdBNyoYDlTwOMdj/eucatp97pOoPaTTQzMihsxHIGRkZ9DVnQsgTUNZ78yDOGB5EYQ2jyqC3YCtZbRh2FLIby9jX3RxWz6ncqAXU1dcn5kJh09gV9sbkegrEWhxTxGG31Mgk8bxxVfkV15zW9pfy28mcmlatXBlZ0vkRzeaLdaTt67xyRv90o+cn5dxWbe9SGK5trhCYpVx1IgNyNzg5/uM+VZW8GrQdKK2Dyo3UZsfAjk+nwr0tsoRQsoJHfcvc/HHalN3ppoNqeIdoeoaPZMIL8yYWZZUY8447EfzDt2+NOdGu9KvhFbG8CrK3VYTfd3klQpGPPGcg/pVd03Ub3Tt7WyR4B2vKhBOM5Hf60Zda1c3tq9pd6atyVHUhaOLYysRww29hn4ckVPkwlm+/8An3lC5lAhl9usoJI1SIxvMVIDb2Ujg5Hlz5fhW2l/6ZHpM3WtobhllAhlTDMSRkYyRx3GM0msdK8SXR60VjfttIO5UXBPHbPJHA/Ouh6Z4c9oYx34dt+SY2t1RPywcj1rnx60L/iL9oQcmUiMwac1zNHsM8qIpNy5Dc9+wHy+mas9rdm/a2tLaF5Hyre5z7zHGcnvwT8eDT1v2f6bBMZY4IpSVGGk3tjGO3JHYVa9O0LSbWGMrp1spTDlHgGQf6hntis5MO7UfEx7cAOBE9vo962oCWS66UUCLndCdxyMd+3OO/pXO/G9tfaV4juFkiLwyKnRmeParrtHAPY4xiuzJLHqUEqx3RVM4DRnlSD2I/T51zr9q+szvdrpCK6QxKrScYWUnlSPl6/MUzo8ARiwk2XO2Sgf4nPlupRnMcdZLyygEwx4rLxsQu0YxW5YIoFehFQO98ParGufZlIz5OKUXGkX8eepCFx6uKKudZ1K4jCyXE6oR24yfwpWC5kZpVcr57skYpWMZAOalDNcfaHHNFpsn24CSThH2D+EePeLemMjFenVorkxzSOSjcH1Hkf1o+0To+FpHSJWM1xgKOxUAcUFrcrGa3twkkMUUQZVY88/H04pDHZ47GCq3Gdlew29nPbrGhaYD32XO3HwIwa1tEhgkEsMjRyIfddDgiq4088THpuHXy3DBqePVpUGHtzx5hqDYHI4MYuRL5nRrDxbf28Sxi4Wc5yzTRjt6cYP1q22fiXSvYFmjvI01O7PSxMci3A74+fcE9z34GBxaDWVyN1rMR27iiJNSu5W221krL8W5pSplRrgbFiccS4CwvJteNw9ykc00hBMc/MjYxwM5Oe/NWqw8TK+lpI8jXF1bHDC49xmX+oEd/Qj9M1zjSNM8Sz3Ec9jbx2zKwZZWbO0jkGrfpng23X7XxBeSXMhO9404T8PSsMrAd5r0kY+9LBBqLwTW6aZbmewmnQv0xjbFIAxfPqpbPHoe1Jf2mT2dy1rAhWW9gZ0kdT2TyB+vI+tXAQ2KWkYtQERHWNVXgAHPFcu8QWiWWoSxwj3JG3rjyyefzpvSsEf0/jyPpJc6WNx44+8Qu+xj8qHmcStwOKdalaLKINi4Cjk1FJYwpzvAr0RJSZUoYLieURog3YJbdxgfWs3EMqp9oMqGwoHO4/SmttdWPTna6jmeR2yABgD5elaNLBLaNNbxyAQnDL/ADEd81KGJPaUkERhZX3segwx3Ee+5SZpOl2BUjA8qVa5qs2qzQXF0jIyJs+6ANucjsPnRF1cDZGEGZOPvHjFAXcyrC5dhlhjcx+79KwnLXUaQQtXIbe3hlaN5rqNYyw6gH31XPdRjmrnb6H4RuGWKS/vbV25V5GAB/3Lg1TNOgglvYpHkBC5JycAt5VZ2nh1JoLZkizCrhZs4HOPdz6jHft7xrszkEVOxoWHMcan+zTVIgs+iywajbMeOenIPmDwfnnz7Umk0TXNKlDXWl3UK7uG2hgT8xVk0rWNVsdH6OlEGaLbGFfc6kZwW7g4x2qDUPFXiW7nhsre5gjic4dkjLEYAJOSfQ0gZQ/umNHqpz3En0G/1NzFAtrOc4AwlOfab17lrZ49sp7iQheK5vcXviCz1FZ31icvHKekFOMj1IHGPLmrTputjUAzX2lvLdYy08LgZPqSTx5eeKn6jDQBBm1z5Cf+ZZNIv00vW0028vbKRrp02W6yGRyScDGBwQec0Jrwsb62S60GKW5MTMJXkPLD5eWP1pdpccv73abeTW3VhlaNreSPLCMhuTwPn34qxXV9o9k801q6R9aSQOsJLLIck5/58q1jZcSqyCzF5EbIxDmvzzKgi3fLvCpUcbSaWutxNMx6GQOBzT6d726VyDb7GJOOcjml0dtesT7L0lx3y3evY2nm6tKEb884ibnzNRwam9tcb9nuNw4z3FDCyv2dEjBl6jYVoiHB+oqbVtLawUMyzOpxlicYPp2/WuCIDU02YkQuecCUJ/K5Gxh5ijdO0O+1G4lZo1a2BBb39qkf9+VVmOU9HYHHHKhuCPkatuj38dlpL3E5KS3GUgXOQCMBnXHn2GfgaDpqOJyZC3Bjqz8GLPF1o5t77sM4YcnPI7cfOioPCj22oxE3BCSNuVTMibsZ93nGcd+PSkNlqkMFtJBas0XUCiSQkhnwc8elMLO+kt43SGUGGUEPE3vI2fMg8Z+PcVBkduxluND3uXzR9A082cVxfah9u4YGQTrtY5PA4xgcDPfjmpJv2dIbm0mg1gJCq++kyb/idpBAGa5y9vbqxdNuwADGDVu8OJqMFkLi7upIrHHUiDSZAQAHgZ4FKx6mzUOVXQWHh2s+AWWPEmtR9B3JMl0u0x8d+Tzz5cfe+FGabZeFtNjdG1aW6ZgFlWKPhgPgAT+dJtduY9SttN1e+l2798OHkG0FDwcZ7kH8jUFrfafGyhWMz/0wozfnjH50nNkrhUv5x2HGWW3c3+kud1rGiz6VdRaSshmMbRpFChiZWx3Jxx86Qa9aaBpekQxBDBcmIyW0ixlurggFWP1HftQWq61JFp0vs8LWat7iO5UuSe+AOPrmq1q8DvpmnypeTS2vSCpubd05APfU+h4B+INW9EWyW7ASTqMYxkAExpa30aqSu1lxyQeRWLe8hy5YtyeOKRI0SqpWVmYDyUVHNJzld5z8avqKuCJ4TmHv6XqtlK+OCsmwn8KC1PRdXEWdSd+mvZi5ZP8AFExaXeMoWXT7NHHaRJpB9cA4plpfh252M8jrO+c4ye3ypK+oGskH9vpMaA+JUo9DuJmAgHUJzgLWGsby4McRdmMK7EQD7o+Qq8S2s0KkW67JhwCCyY+o5raa3W8W1ItGsLqNyJprZ89QEdzuHJ3c4Px55yNtle+BD6S1cpkemauowkEjgeoxU3s2owRmSW1dQkbSMQ+cKCBz9SKuw1HVtP8As7TOogDlugIz+G40E3iOXUZHtrmwjhuHQhDNGQTx6ef1pBfKTyohFjsZTU1ZgwIDkg5xiupajpklx4H0y61H2a0ntCTc9cCPEb8qGUD73ljGTmq7ocQ0uYOlnbSNuVkNxCG6bDzBBDenc+VP2uIZZJpH08NPMCsjCZ/tATnB3bs84xkcYHpTiqdqh2yWOYV4X/0rVNFks2n9phtSWidLUjok9wpP3uTkr6VNYaR7fdrb2N1cS2rRdTrR2vTzknHfPoaBsbtLR9s/tVpbW8bGGYEShD8VXaW7+YNA6lZ+IbO66FtqS+yqgaBrdTGrqwyHIJPJyPOon6bcniPGZlHDcn9Jb08F6NbrH7XO+8LtDXd0SQO5x6ULqXg7SLmGOaxnlaGVfs5Y543Vj9SKqF1H4iv7cx3OqSH3cc7myPTvRWnXXijSoFVlhu0Ue6WPIH5GtenkRfdP9/giDsTZMKufCcVnpiFZZfbBIeoNucp5YA8+3n5n4Uin064WQ7LeUr6shBP05p7+8/iOZtgtbZP/ACJom2n1KcudXl6K8dM2m059c7hW1fOPF/OpwU+ZyqPVNQH3buXHlzRMOtapHgrduPjtX/FYr1XECIBMmbxNqwPvXCv8WiU/pWo8T6ko56BGMcx/4Ner1dqJ2x+MlTxZqAIJS2b5of8ANF/vtfFAptrYn5N/mvV6uKicHaYPjCbcplsbdiPi2P71v++E5/h2kKjGMAmvV6hqId2ki+MZRA8c9lE6ONpG8jirRca8brwDY6xBGntVpILORMkgKCdmf/Xb+Ner1DUVO2NyvJ42mjAD2UBb13Nj8K2/fm5HC2Vv89z/AOa9XqGomtzJH8dytHsGnWgI7tlsj86G/fe/AGIoP9p/zWa9XaiDcz//2Q==" alt="Chicken Burger">
-
-                    <h3>Chicken Burger</h3>
-
-                    <p>
-                        Juicy chicken patty with fresh vegetables and sauce.
-                    </p>
-
-                    <span>₹249</span>
-
-                    <a href="#contact">Order Now</a>
-                </article>
-
-
-                <!-- Menu Item 3 -->
-                <article>
-                    <img src="data:image/jpeg;base64,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" alt="White Sauce Pasta">
-
-                    <h3>White Sauce Pasta</h3>
-
-                    <p>
-                        Creamy pasta prepared with our special white sauce.
-                    </p>
-
-                    <span>₹349</span>
-
-                    <a href="#contact">Order Now</a>
-                </article>
-
-
-                <!-- Menu Item 4 -->
-                <article>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMOokBKJfGrAqzONgLzXVOFuinHwdJpoTQtYxzqmpIKnuTrs2_YiW6uNFv4VB7svq-zTtMy3agcuvq0QxuYyTB0EiLfX-uow9PDKyxFanO&s=10" alt="Caesar Salad">
-
-                    <h3>Caesar Salad</h3>
-
-                    <p>
-                        Fresh vegetables with delicious Caesar dressing.
-                    </p>
-
-                    <span>₹199</span>
-
-                    <a href="#contact">Order Now</a>
-                </article>
-
-
-                <!-- Menu Item 5 -->
-                <article>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ80JhOdO01qCDp6Q6QuZhqyZ20KQJDndl-FWz6khjEyA&s=10" alt="Cold Coffee">
-
-                    <h3>Cold Coffee</h3>
-
-                    <p>
-                        Creamy chilled coffee topped with chocolate.
-                    </p>
-
-                    <span>₹149</span>
-
-                    <a href="#contact">Order Now</a>
-                </article>
-
-
-                <!-- Menu Item 6 -->
-                <article>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1_IBhkpqoCy5ack7BswigDcPymNT6atAw2fpp1tqrFg&s=10" alt="Chocolate Cake">
-
-                    <h3>Chocolate Cake</h3>
-
-                    <p>
-                        Soft and delicious chocolate cake.
-                    </p>
-
-                    <span>₹199</span>
-
-                    <a href="#contact">Order Now</a>
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= GALLERY SECTION ================= -->
-
-        <section id="gallery">
-
-            <div>
-                <p>Our Gallery</p>
-
-                <h2>Food & Moments</h2>
-            </div>
-
-            <div>
-
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShZZiefPTvvdBQxFKUbuVBUY1Ud-XAdVLjiW_kvc1e3Q&s=10" alt="Restaurant food">
-
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWPF2NkgE8BR3DWhbRPKrtH3du4Q0zbKoKmjnZUkFH9A&s=10" alt="Restaurant interior">
-
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXpmiXOqhie1TRKv1TbAj5askwfHVngY7Ec3O7cGU-Cg&s=10" alt="Delicious food">
-
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRscSPT652gc0x-yXfpY5aUdTLEgMQucknbtqTh066bg&s=10" alt="Restaurant dish">
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= CONTACT SECTION ================= -->
-
-        <section id="contact">
-
-            <div>
-                <p>Contact Us</p>
-
-                <h2>Book Your Table</h2>
-
-                <p>
-                    Have a question or want to reserve a table?
-                    Get in touch with us.
-                </p>
-
-                <p>📍 Jammu, India</p>
-                <p>📞 +91 98765 43210</p>
-                <p>✉️ hello@deliciousbites.com</p>
-                <p>🕒 Mon - Sun: 10:00 AM - 11:00 PM</p>
-            </div>
-
-
-            <!-- Contact Form -->
-
-            <form>
-
-                <label for="name">Name</label>
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Enter your name"
-                    required
-                >
-
-
-                <label for="email">Email</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Enter your email"
-                    required
-                >
-
-
-                <label for="phone">Phone</label>
-                <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="Enter your phone number"
-                >
-
-
-                <label for="message">Message</label>
-                <textarea
-                    id="message"
-                    name="message"
-                    rows="5"
-                    placeholder="Write your message"
-                ></textarea>
-
-
-                <button type="submit">Send Message</button>
-
-            </form>
-
-        </section>
-
-    </main>
-
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer>
-
-        <h2>Delicious Bites</h2>
+        <h2>Fresh Food.<br>Great Taste.</h2>
 
         <p>
-            Fresh food. Great taste. Happy moments.
+            Enjoy delicious food made with fresh ingredients
+            and served with love.
         </p>
 
-        <div>
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-        </div>
+        <a href="#menu">Explore Menu</a>
+
+        <a href="#contact">Book a Table</a>
+    </div>
+
+</section>
+
+
+<!-- ===== ABOUT ===== -->
+
+<section id="about">
+
+    <div>
+        <p>ABOUT US</p>
+
+        <h2>We Love Good Food</h2>
 
         <p>
-            © 2026 Delicious Bites. All Rights Reserved.
+            Delicious Bites is a place where great taste,
+            fresh ingredients and a comfortable atmosphere
+            come together.
         </p>
 
-    </footer>
+        <p>
+            Our goal is to serve delicious food that makes
+            every visit special.
+        </p>
+    </div>
+
+</section>
 
 
-    <script src="script.js"></script>
+<!-- ===== MENU ===== -->
 
-</body>
+<section id="menu">
 
-</html>
+    <div>
+        <p>OUR MENU</p>
+        <h2>Popular Dishes</h2>
+    </div>
+
+
+    <div>
+
+        <!-- Dish 1 -->
+        <article>
+
+            <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8"
+                 alt="White Sauce Pasta">
+
+            <h3>White Sauce Pasta</h3>
+
+            <p>
+                Creamy pasta prepared with fresh vegetables
+                and delicious white sauce.
+            </p>
+
+            <span>₹199</span>
+
+            <a href="#" class="orderBtn">Order Now</a>
+
+        </article>
+
+
+        <!-- Dish 2 -->
+        <article>
+
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38"
+                 alt="Cheese Pizza">
+
+            <h3>Cheese Pizza</h3>
+
+            <p>
+                Delicious cheesy pizza topped with fresh
+                vegetables and herbs.
+            </p>
+
+            <span>₹249</span>
+
+            <a href="#" class="orderBtn">Order Now</a>
+
+        </article>
+
+
+        <!-- Dish 3 -->
+        <article>
+
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349"
+                 alt="Classic Burger">
+
+            <h3>Classic Burger</h3>
+
+            <p>
+                Juicy burger with fresh vegetables,
+                cheese and our special sauce.
+            </p>
+
+            <span>₹179</span>
+
+            <a href="#" class="orderBtn">Order Now</a>
+
+        </article>
+
+    </div>
+
+</section>
