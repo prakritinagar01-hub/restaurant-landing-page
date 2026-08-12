@@ -1,41 +1,61 @@
-# 🍽️ Delicious Bites – Restaurant Landing Page
+# 🍽️ Restaurant Landing Page
 
-A modern and responsive restaurant landing page built using **HTML and CSS**.
+### 🌐 Live Website
 
-Delicious Bites is a fictional restaurant website designed to showcase a clean, attractive, and user-friendly restaurant experience.
+👉 **[View Restaurant Website](https://prakritinagar01-hub.github.io/restaurant-landing-page/)**
 
-## 🌐 Live Website
+A modern, responsive, and interactive restaurant website built using **HTML5, CSS3, and JavaScript**.
 
-🔗 **Live Demo:**  
-https://prakritinagar01-hub.github.io/restaurant/
+---
 
-## 📌 Features
+## 📌 About The Project
 
-- 🏠 Attractive Hero Section
-- 📖 About Us Section
-- 🍕 Popular Dishes / Menu Section
-- 🖼️ Food Gallery
-- 📞 Contact & Table Booking Section
-- 🦶 Responsive Footer
-- 📱 Responsive design for different screen sizes
-- 🎨 Modern color scheme and clean UI
-- ✨ Smooth scrolling navigation
-- 🔗 Navigation links to different sections
+**Delicious Bites** is a modern restaurant landing page designed to provide visitors with an attractive and user-friendly experience.
+
+The website allows users to explore the restaurant, browse the menu, view food images, place an order request, book a table, and contact the restaurant.
+
+This project was developed to practice practical **frontend web development** skills and understand how HTML, CSS, and JavaScript work together to create an interactive website.
+
+---
+
+## ✨ Features
+
+- 🏠 Responsive navigation bar
+- 🎨 Modern and attractive hero section
+- 📖 About Us section
+- 🍴 Restaurant menu with food items and prices
+- 🛒 Interactive **Order Now** buttons
+- 📸 Food gallery
+- 📅 Table booking form
+- 📞 Contact section
+- 🔔 JavaScript popup messages
+- 🧭 Smooth navigation
+- 📱 Fully responsive design
+- 💻 Works across desktop, tablet, and mobile devices
+
+---
 
 ## 🛠️ Technologies Used
 
-- HTML5
-- CSS3
-- CSS Flexbox
-- CSS Grid
-- Responsive Media Queries
-- Google Chrome / Live Server for testing
+| Technology | Purpose |
+|------------|---------|
+| **HTML5** | Website structure and content |
+| **CSS3** | Styling, layout, animations, and responsiveness |
+| **JavaScript** | Interactivity and DOM manipulation |
+| **Git** | Version control |
+| **GitHub** | Repository hosting and deployment |
+
+---
 
 ## 📂 Project Structure
 
 ```text
-restaurant/
+restaurant-landing-page/
 │
 ├── index.html
 ├── style.css
+├── script.js
+├── images/
+│   └── restaurant images
+│
 └── README.md
