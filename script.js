@@ -7,7 +7,7 @@
 // 1. ORDER NOW BUTTONS
 // ==================================================
 
-const orderButtons = document.querySelectorAll(".order-btn");
+const orderButtons = document.querySelectorAll(".orderBtn");
 
 orderButtons.forEach(function (button) {
 
