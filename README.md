@@ -1,4 +1,4 @@
-# 🍽️ delicious bites
+# 🍽️ Delicious bites
 
 ### 🌐 Live Website
 
