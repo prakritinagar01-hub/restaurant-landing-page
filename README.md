@@ -1,4 +1,4 @@
-# 🍽️ Restaurant Landing Page
+# 🍽️ delicious bites
 
 ### 🌐 Live Website
 
