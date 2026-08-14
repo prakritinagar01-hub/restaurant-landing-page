@@ -2,7 +2,7 @@
 
 ### 🌐 Live Website
 
-👉 **[View Restaurant Website](https://prakritinagar01-hub.github.io/restaurant-landing-page/)**
+👉 **[View Restaurant Website](https://prakritinagar01-hub.github.io/Delicious-bites)**
 
 A modern, responsive, and interactive restaurant website built using **HTML5, CSS3, and JavaScript**.
 
